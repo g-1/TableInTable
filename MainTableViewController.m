@@ -121,7 +121,7 @@
   if( cell.index % 2){
     int no = cell.index / 2;
     SubTableView *subTableView = (SubTableView *)[[SubTableViewCollection sharedManager].subTables objectAtIndex:no];
-    [cell.contentView addSubview:subTableView.table];
+    [cell.contentView addSubview:subTableView];
   }
   
   return cell;

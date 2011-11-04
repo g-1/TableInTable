@@ -22,6 +22,7 @@
     self.table = [[[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain] autorelease];
     self.table.delegate = self;
     self.table.dataSource = self;
+    [self addSubview:self.table];
   }
   return self;
 }
